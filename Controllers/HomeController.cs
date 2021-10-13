@@ -15,9 +15,9 @@ namespace pipelines_dotnet_core.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public string Privacy()
         {
-            return View();
+            return string.Format("This is a pipeline test project");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
